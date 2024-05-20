@@ -2,6 +2,8 @@ package com.suren;
 
 import java.net.MalformedURLException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -83,6 +85,47 @@ public class AppTest{
     
         driver.quit();
     }
+
+
+// @Test(priority = 3)
+// public void testCase3() throws InterruptedException, IOException {
+// driver.get("https://www.1mg.com/");
+// Thread.sleep(3000); 
+
+// WebElement  search=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/header[1]/div[5]/div[1]/div[2]/div/form/input"));
+// search.sendKeys("Paracetamol");
+
+// WebElement findclick=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/header[1]/div[5]/div[1]/div[2]/div/form/span/div"));
+// findclick.click();
+// Thread.sleep(3000);
+
+// WebElement words=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/div/div/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/div[2]/div/div[2]/div/div/div/a/div"));
+// words.click();
+// Thread.sleep(3000);
+
+// WebElement zeroword =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[1]/div[1]/span[1]/a"));
+// zeroword.click();
+// Thread.sleep(3000);
+
+// WebElement add =driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/div/div/div[3]/div[2]/div/div/div/div/div/span/div/div"));
+// add.click();
+// Thread.sleep(3000);
+
+// WebElement cart = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/header/div[4]/div[2]/div/div[3]/div/div"));
+// cart.click();
+// Thread.sleep(3000);
+
+// if (driver.getCurrentUrl().contains("cart")) {
+// captureScreenshot(driver, "TestCase3.png");
+// }
+// }
+
+// public void captureScreenshot(WebDriver driver, String fileName) throws IOException {
+// File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+// FileHandler.copy(srcFile, new File("C:\\Users\\suren\\OneDrive\\Desktop\\Selenium\\Lab-Questions\\milestonetest\\src\\screenshots\\" + fileName));
+// }
+
+
 }
 
 
